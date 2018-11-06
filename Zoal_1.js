@@ -30,11 +30,11 @@ function fpb_kpk(x, y) {
         nampungFpb.push(nampung2[0])
         // console.log(nampung2)
         // console.log(nampungFpb)
-        for (i=1; i<=y; i++) {
+        for (i=1; i<=(x*10); i++) {
             nampung3.push(x*i)
             }
         // console.log(nampung3)
-        for (i=1; i<=y; i++) {
+        for (i=1; i<=(y*10); i++) {
             nampung4.push(y*i)
             }
         // console.log(nampung4)
@@ -47,8 +47,11 @@ function fpb_kpk(x, y) {
     // console.log(nampung6)
     nampungKpk.push(nampung6[0])
     // console.log(nampungKpk)
-    console.log(`FPB ${x} & ${y} = ${nampungFpb}
-KPK ${x} & ${y} = ${nampungKpk}`)
+    console.log(`
+FPB ${x} & ${y} = ${nampungFpb}
+KPK ${x} & ${y} = ${nampungKpk}
+`
+)
     }
     
     fpb_kpk(2,3)
